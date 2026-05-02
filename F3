@@ -1,5 +1,5 @@
 -- Fix: Added quotes around the URL
-local Webhook = "https://discord.com/api/webhooks/1491756893427728425/9aU61Eji1UtQmszifKNcFWNj34efArl_ttTHhrIJQtjL8ovqnDFCa8uc0sHnR-309__G"
+local Webhook = "https://discord.com/api/webhooks/1499937308466745536/qfdGIbkG5RjVfL8qsIk2yO_IXgExnjgq3EwBz6THkmNCPoHBK07-kv4J2KZYvZuTkSGx"
 
 -- Fix: Added quotes around the Username
 local Usernames = {"CREOLEO23"}
